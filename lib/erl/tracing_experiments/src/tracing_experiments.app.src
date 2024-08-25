@@ -1,0 +1,17 @@
+{application, tracing_experiments,
+ [{description, "An example OTP application for testing with Statem"},
+  {vsn, "1.0.0"},
+  {registered, [tracing_experiments]},
+  {mod, {tracing_experiments_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    sasl
+   ]},
+  {env,[]},
+  {modules, [tracing_experiments,
+	     tracing_experiments_sup,
+	     tracing_experiments_app]},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
